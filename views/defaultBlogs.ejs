@@ -1,0 +1,176 @@
+
+
+<%- include('partials/header') %>
+
+<!-- offcanvas for side navbar -->
+
+<div class="offcanvas offcanvas-start w-25" tabindex="-1" id="offcanvas" data-bs-keyboard="false" data-bs-backdrop="false">
+    <div class="offcanvas-header">
+        <h6 class="offcanvas-title d-none d-sm-block" id="offcanvas">Menu</h6>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body px-0">
+        <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-start" id="menu">
+            <li class="nav-item">
+                <a href="/" class="nav-link text-truncate">
+                    <i class="fas fa-home mx-2 "></i><span class="ms-1 d-none d-sm-inline ">Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="/dashboard"  class="nav-link text-truncate">
+                    <i class="fas fa-tachometer-alt mx-2 "></i><span class="ms-1 d-none d-sm-inline">Dashboard</span> 
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav-link text-truncate">
+                    <i class="fas fa-receipt mx-2 "></i><span class="ms-1 d-none d-sm-inline">Orders</span></a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col  p-4">
+            <!-- toggler -->
+            <button class="btn float-end " data-bs-toggle="offcanvas" data-bs-target="#offcanvas" role="button">
+                <i class="fas fa-arrow-alt-circle-right fa-2x" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"></i>
+            </button>
+            <h3>Sample Content...</h3>
+            <p>Sriracha biodiesel taxidermy organic post-ironic, Intelligentsia salvia mustache 90's code editing brunch. Butcher polaroid VHS art party, hashtag Brooklyn deep v PBR narwhal sustainable mixtape swag wolf squid tote bag. Tote bag cronut semiotics, raw denim deep v taxidermy messenger bag. Tofu YOLO Etsy, direct trade ethical Odd Future jean shorts paleo. Forage Shoreditch tousled aesthetic irony, street art organic Bushwick artisan cliche semiotics ugh synth chillwave meditation. Shabby chic lomo plaid vinyl chambray Vice. Vice sustainable cardigan, Williamsburg master cleanse hella DIY 90's blog.</p>
+            
+            <p>Ethical Kickstarter PBR asymmetrical lo-fi. Dreamcatcher street art Carles, stumptown gluten-free Kickstarter artisan Wes Anderson wolf pug. Godard sustainable you probably haven't heard of them, vegan farm-to-table Williamsburg slow-carb readymade disrupt deep v. Meggings seitan Wes Anderson semiotics, cliche American Apparel whatever. Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack art party Portland.</p> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+            <p>Aenean ultrices vestibulum turpis quis tincidunt. Integer in neque sagittis, iaculis dolor ac, sollicitudin metus. Etiam ornare facilisis tortor, in lobortis neque lobortis a. Suspendisse eget dolor sed erat efficitur posuere. Proin fermentum fermentum mollis. Proin vehicula semper mauris, sed convallis mi condimentum a. Donec sed euismod augue.</p>
+
+                <p>ut dignissim ex. Vestibulum mattis mattis pellentesque. Nam sodales odio ultrices tortor ornare, quis feugiat risus semper. Vestibulum facilisis sagittis felis ut lobortis. Nunc erat purus, scelerisque sed sem in, tincidunt dictum leo. Suspendisse consectetur tristique volutpat. Aliquam erat volutpat. Suspendisse sollicitudin a eros vitae volutpat.</p>
+        </div>
+    </div>
+</div>
+
+<!-- list of all the courses using card view -->
+<div class="container">
+    <div class="row row-cols m-3">
+      <div class="col">
+        <div class="card" style="width: 24rem;">
+            <img src="https://images.unsplash.com/photo-1519337265831-281ec6cc8514?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8YmxvZ3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">web development 2022</h5>
+              <p class="card-text">Mr xyz...,Mrs fgcgv,hbj iuuij,creator john..</p>
+              <div class="d-grid gap-2 col-12 mx-auto">
+                <a  href="/show" class="btn btn-info" type="button">More Info</a>
+                </div>
+            </div>
+          </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 24rem;">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8YmxvZ3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"> web development 2022</h5>
+              <p class="card-text">Mr xyz...,Mrs fgcgv,hbj iuuij,creator john..</p>
+              <div class="d-grid gap-2 col-12 mx-auto">
+                <a href="show" class="btn btn-info" type="button">More Info</a>
+                </div>
+            </div>
+          </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 24rem;">
+            <img src="https://www.onlinecoursereport.com/wp-content/uploads/2020/07/shutterstock_394793860-1024x784.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">web development 2022</h5>
+              <p class="card-text">Mr xyz...,Mrs fgcgv,hbj iuuij,creator john...</p>
+              <div class="d-grid gap-2 col-12 mx-auto">
+                <a href="/show" class="btn btn-info" type="button">More Info</a>
+                </div>
+            </div>
+          </div>
+      </div>
+      
+    </div>
+    <div class="row row-cols m-3">
+        <div class="col">
+          <div class="card" style="width: 24rem;">
+              <img src="https://www.onlinecoursereport.com/wp-content/uploads/2020/07/shutterstock_394793860-1024x784.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">web development 2022</h5>
+                <p class="card-text">Mr xyz...,Mrs fgcgv,hbj iuuij,creator john..</p>
+                <div class="d-grid gap-2 col-12 mx-auto">
+                  <a  href="show" class="btn btn-info" type="button">More Info</a>
+                  </div>
+              </div>
+            </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 24rem;">
+              <img src="https://www.onlinecoursereport.com/wp-content/uploads/2020/07/shutterstock_394793860-1024x784.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"> web development 2022</h5>
+                <p class="card-text">Mr xyz...,Mrs fgcgv,hbj iuuij,creator john..</p>
+                <div class="d-grid gap-2 col-12 mx-auto">
+                  <a href="/show" class="btn btn-info" type="button">More Info</a>
+                  </div>
+              </div>
+            </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 24rem;">
+              <img src="https://www.onlinecoursereport.com/wp-content/uploads/2020/07/shutterstock_394793860-1024x784.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">web development 2022</h5>
+                <p class="card-text">Mr xyz...,Mrs fgcgv,hbj iuuij,creator john...</p>
+                <div class="d-grid gap-2 col-12 mx-auto">
+                  <a href="/show" class="btn btn-info" type="button">More Info</a>
+                  </div>
+              </div>
+            </div>
+        </div>
+        <div class="row row-cols m-3">
+            <div class="col">
+              <div class="card" style="width: 24rem;">
+                  <img src="https://www.onlinecoursereport.com/wp-content/uploads/2020/07/shutterstock_394793860-1024x784.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">web development 2022</h5>
+                    <p class="card-text">Mr xyz...,Mrs fgcgv,hbj iuuij,creator john..</p>
+                    <div class="d-grid gap-2 col-12 mx-auto">
+                      <a  href="/show" class="btn btn-info" type="button">More Info</a>
+                      </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 24rem;">
+                  <img src="https://www.onlinecoursereport.com/wp-content/uploads/2020/07/shutterstock_394793860-1024x784.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title"> web development 2022</h5>
+                    <p class="card-text">Mr xyz...,Mrs fgcgv,hbj iuuij,creator john..</p>
+                    <div class="d-grid gap-2 col-12 mx-auto">
+                      <a href="/show" class="btn btn-info" type="button">More Info</a>
+                      </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 24rem;">
+                  <img src="https://www.onlinecoursereport.com/wp-content/uploads/2020/07/shutterstock_394793860-1024x784.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">web development 2022</h5>
+                    <p class="card-text">Mr xyz...,Mrs fgcgv,hbj iuuij,creator john...</p>
+                    <div class="d-grid gap-2 col-12 mx-auto">
+                      <a href="/show" class="btn btn-info" type="button">More Info</a>
+                      </div>
+                  </div>
+                </div>
+            </div>
+            
+          </div>
+          
+        
+      </div>
+      
+    
+  </div>
+
+
+
+<%- include('partials/footer') %>

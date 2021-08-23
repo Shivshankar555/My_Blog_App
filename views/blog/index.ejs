@@ -1,0 +1,44 @@
+<%- include('../partials/header'); -%>
+
+
+
+<div class="container">
+
+
+    <div class="container-fluid bg-dark p-5 m-3">
+        <h1 class="display-4 text-white">My First Blog App</h1>
+        <p class="lead text-white">This is  a Blog App created using the bootstrap 5</p>
+        <hr class="my-4 text-white">
+        <p class="text-white">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, ma</p>
+        <a class="btn  btn-light btn-lg " href="/new/blogs" role="button">Create new Blog</a>
+      </div>
+    
+    
+        <div class="row row-cols m-2">
+
+        <% blogs.forEach((blog)=>{ %>
+
+            <div class="col">
+                <div class="card" style="width: 24rem;">
+                    <img src="<%= blog.image %>" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"><%= blog.name %></h5>
+                      <p class="card-text"><%= blog.description %></p>
+                      <div class="d-grid gap-2 col-12 mx-auto">
+                        <a  href="/blogs/<%= blog._id %>" class="btn btn-info" type="button">More Info</a>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+    
+            <% }); %>
+
+    </div>
+</div>
+
+
+
+   
+
+
+<%- include('../partials/footer'); -%>

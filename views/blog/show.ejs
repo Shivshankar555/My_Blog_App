@@ -1,0 +1,54 @@
+
+<%- include('../partials/header') %>
+
+
+
+
+<!-- card body for show page -->
+
+<div class="row  m-5">
+    <div class="row col-6 offset-3">
+        <div class="card p-3">
+            <img src="<%= blog.image %>" class="card-img-top" id="myImage" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><a><%= blog.name %></h5>
+              <p class="card-text "><%= blog.description %></p>
+               
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item text-muted">Australia, Canberra</li>
+              <li class="list-group-item"><span>Price:</span> $10</li>
+              <li class="list-group-item">Created by <em><%= blog.author.username %></em></li>
+            </ul>
+            
+              
+                <div class="container-fluid">
+                  <div class="row">
+                    <% if(currentUser &&  blog.author.id.equals(currentUser._id)){ %>
+                    <div class="col-lg-2 col-md-4 col-xs-2 ">
+                      <a class="btn btn-success btn-block" href="/blogs/<%= blog._id %>/edit">Edit</a>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-xs-2 mx-auto ">
+                      <form id="delete-form" action="/blogs/<%= blog._id %>?_method=DELETE" method="POST">
+                        <button class="btn btn-danger btn-block">Delete</button>
+                      </form>
+                    </div>
+                        <% } %>
+                  </div>
+                </div>
+
+              
+              
+            
+          </div>
+    </div>
+
+</div>
+
+
+
+<!-- javascript file for social media share buttons -->
+
+  <script src="/main.js"></script>
+
+  <%- include('../partials/footer') %>

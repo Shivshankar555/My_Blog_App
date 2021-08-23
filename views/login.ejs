@@ -1,0 +1,58 @@
+
+
+<%- include('partials/header') %>
+
+
+<!-- FLASH MESSAGE -->
+<% if(messages && messages.length){ %>
+    <div class="alert alert-danger d-flex align-items-center alert-dismissible fade show  fw-bold" role="alert">
+        <i class="fas fa-exclamation-triangle m-2"></i>
+        
+            <%= messages %>
+        
+           
+        
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+<% } %>
+
+
+<!-- LOGIN FORM -->
+<section class="login-section">
+    <div class="container mt-5">
+    <div class="row justify-content-center">
+    <div class="col-md-7 col-lg-5">
+    <div class="login-wrap p-4 p-md-5">
+    <div class="icon d-flex align-items-center justify-content-center">
+        <i class="fas fa-user fa-4x"></i>
+    </div>
+    <h3 class="text-center mb-4">Sign In</h3>
+    <form action="/login" class="login-form" method="POST">
+    <div class="form-group my-3">
+    <input type="text" class="form-control rounded-left" name="username" placeholder="Username" required>
+    </div>
+    <div class="form-group d-flex my-3">
+    <input type="password" class="form-control rounded-left" name="password" placeholder="Password" required>
+    </div>
+    <div class="form-group my-3">
+    <button type="submit" class="form-control btn btn-primary rounded submit px-3">Login</button>
+    </div>
+    <div class="form-group d-md-flex">
+    <div class="w-50">
+    <label class="checkbox-wrap checkbox-primary">Remember Me
+    <input type="checkbox" checked>
+    <span class="checkmark"></span>
+    </label>
+    </div>
+    <div class="w-50 text-md-right">
+    <a href="#">Forgot Password</a>
+    </div>
+    </div>
+    </form>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+
+<%- include('partials/footer') %>

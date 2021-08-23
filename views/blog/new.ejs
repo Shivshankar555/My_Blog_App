@@ -1,0 +1,26 @@
+<%- include ('../partials/header'); %>
+
+<div class="container m-5">
+    <h1 class="mb-3 text-center">Add your favorite Blog to the list.</h1>
+    
+    <form action="/blogs" method="POST">
+        <div class="form-group myForm">
+            <input class="form-control" type="text" name="name" placeholder="name">
+        </div>
+        <div class="form-group myForm">
+            <input class="form-control" type="text" name="image" placeholder="image url">
+        </div>
+        <div class="form-group myForm">
+            <textarea class="form-control exampleFormControlTextarea1" type="text" name="description" placeholder="description"></textarea>
+        </div>
+        <div class="form-group myForm">
+            <button class="btn  btn-success btn-block">Create</button>
+        </div>
+        <a href="/blogs" type="button" class="btn btn-secondary">Go Back</a>
+    </form>
+    
+</div>
+
+
+
+<%- include ('../partials/footer'); %>
